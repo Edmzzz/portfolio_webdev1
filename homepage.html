@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Uriel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <header>
+            <nav>
+                <div id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="home-content">
+                <img src="assets/uriel.png" alt="Uriel Papa" class="profile-image">
+                <div class="text-content">
+                    <h1>Uriel Papa</h1>
+                    <h2><i>Aspiring Back End Developer</i></h2>
+                    <p>
+                        I'm an Information System student at Technological University of the Philippines.
+                        I’m learning to become a back-end developer. I love coding and I’m excited
+                        to keep learning and improving as I explore web development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Uriel, a 21-year-old 3rd-year student at TUP-Manila, pursuing a Bachelor of Science in<br>Information Systems.
+                I'm currently developing projects using HTML, CSS, JavaScript, PHP, and WordPress, gaining practical experience in web development.
+                Alongside coding, I have a solid understanding of <br> Search Engine Optimization (SEO) and have worked with tools like Google Search Console and Ahrefs.
+                My skills<br>include applying both on-page and off-page SEO strategies, optimizing content and technical aspects for better visibility.
+                Additionally, I have experience in selecting and acquiring quality domains to enhance SEO efforts.<br>
+            </p>
+            <a href="assets/PapaResume.pdf" download>
+                <button>Download CV</button>
+            </a>
+        </section>
+    </div>
+
+    <section id="projects">
+        <h1>My Projects</h1>
+        <p>Here are three of my key projects, along with their GitHub repositories:</p>
+    
+        <div class="project-container">
+            <div class="project-box">
+                <img src="/assets/login.jpg" alt="Login and Registration System">
+                <h2>Login and Registration System</h2>
+                <div class="project-details hidden">
+                    <p>
+                        This project provides secure user authentication with login, signup, and account management features.
+                        Developed using Java, it includes multiple forms such as the Dashboard, Login, Signup, and Update/Delete forms.
+                    </p>
+                    <a class="github-link button-link" 
+                       href="https://github.com/Edmzzz/portfolio_webdev/tree/bd5d428b8bd123cdf29f796e22eae8b4e8da54b8/Login%20and%20Registration%20System" 
+                       target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+                <button class="toggle-details">Show More</button>
+            </div>
+    
+            <div class="project-box">
+                <img src="assets/pos.png" alt="Point of Sales System">
+                <h2>Point of Sales System</h2>
+                <div class="project-details hidden">
+                    <p>
+                        A retail Point of Sales (POS) system designed for inventory management, staff updates, and transaction processing.
+                        The codebase includes a C program along with compiled executables and text files for staff updates.
+                    </p>
+                    <a class="github-link button-link" 
+                       href="https://github.com/Edmzzz/portfolio_webdev/tree/bd5d428b8bd123cdf29f796e22eae8b4e8da54b8/Point%20of%20Sales" 
+                       target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+                <button class="toggle-details">Show More</button>
+            </div>
+    
+            <div class="project-box">
+                <img src="assets/decompression.png" alt="Text File Compression">
+                <h2>Text File Compression Tool</h2>
+                <div class="project-details hidden">
+                    <p>
+                        This tool offers text file compression and decompression functionality using C++. It features multiple programs
+                        like compressProgram and decompressProgram, along with their corresponding executable files for easy usage.
+                    </p>
+                    <a class="github-link button-link" 
+                       href="https://github.com/Edmzzz/portfolio_webdev/tree/bd5d428b8bd123cdf29f796e22eae8b4e8da54b8/Text%20File%20Compression" 
+                       target="_blank">
+                        View on GitHub
+                    </a>
+                </div>
+                <button class="toggle-details">Show More</button>
+            </div>
+        </div>
+    </section>    
+
+<div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+        <button class="close">&times;</button> <!-- Close Button -->
+        <div class="modal-image">
+            <img src="/assets/login.jpg" alt="Project Image" id="modal-image" />
+        </div>
+        <div class="modal-details">
+            <p>
+                This project provides secure user authentication with login, signup, and account management features.
+            </p>
+            <a class="github-link button-link" 
+               href="https://github.com/example" 
+               target="_blank">
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</div>
+
+<section id="skills">
+    <h1>Skills</h1>
+    <p>Here are my programming skills with dynamic progress bars:</p>
+
+    <div class="skills-container">
+        <!-- Skill 1 -->
+        <div class="skill">
+            <span class="skill-label">HTML, CSS, JavaScript</span>
+            <div class="range" style="--p:40"></div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill">
+            <span class="skill-label">PHP</span>
+            <div class="range" style="--p:30"></div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill">
+            <span class="skill-label">MySQL</span>
+            <div class="range" style="--p:35"></div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill">
+            <span class="skill-label">WordPress</span>
+            <div class="range" style="--p:60"></div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill">
+            <span class="skill-label">Python</span>
+            <div class="range" style="--p:20"></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to send me a message using the form below:</p>
+    <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+        <!-- Social Media Links -->
+        <div class="footer-socials">
+            <a href="https://web.facebook.com/yurieyel" target="_blank" aria-label="Facebook">
+                <img src="assets/fb.png" alt="Facebook Icon">
+            </a>
+            <a href="https://github.com/Edmzzz" target="_blank" aria-label="GitHub">
+                <img src="assets/github.png" alt="GitHub Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/uriel-papa-6a6244244/" target="_blank" aria-label="LinkedIn">
+                <img src="assets/linkedin.png" alt="LinkedIn Icon">
+            </a>
+        </div>
+
+        <!-- Footer Message -->
+        <p>
+            @2024 Portfolio Website made by Uriel Papa</a>
+        </p>
+    </footer>
+
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="contact.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

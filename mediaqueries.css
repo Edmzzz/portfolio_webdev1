@@ -1,0 +1,441 @@
+/* For screens 1200px and below */
+@media screen and (max-width: 1200px) {
+    .nav-links {
+        display: none; /* Hide nav-links for smaller screens */
+        flex-direction: column;
+        position: static;
+        width: auto;
+        background-color: transparent; /* Remove background */
+        border: none;
+    }
+
+    #nav-icon1 {
+        display: block;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        margin: 5px 15px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #home {
+        padding: 30px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-content h1 {
+        font-size: 2.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .project-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Consistent spacing */
+    }
+
+    .project-box {
+        max-width: 45%; /* Two-column layout */
+    }
+
+    #skills {
+        padding: 20px;
+        font-size: 16px; /* Reduce font size */
+    }
+
+    #skills .skills-container {
+        gap: 15px;
+    }
+
+    #skills .skill-label {
+        font-size: 14px;
+    }
+
+    #skills .range {
+        height: 25px;
+    }
+
+    #skills .range:after {
+        font-size: 12px;
+    }
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+
+    #contact p {
+        font-size: 1.1rem;
+    }
+
+    #contact form {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (max-width: 500px) {
+    /* Example: Adjust font size for smaller screens */
+    body {
+        font-size: 16px;
+    }
+
+    /* Navigation */
+    .nav-links {
+        position: absolute;
+        top: -8px;
+        left: 48%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        background-color: transparent;
+        width: 90%;
+        gap: 10px; 
+    }
+
+    /* Profile Section */
+    .profile-image {
+        width: 150px; /* Reduce profile image size */
+        height: 150px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    /* About Section */
+    #about {
+        padding: 20px; /* Reduce padding */
+    }
+
+    #about p {
+        font-size: 1rem; /* Smaller paragraph font size */
+    }
+
+    /* Projects Section */
+    .project-box {
+        max-width: 45%; /* Two-column layout */
+    }
+
+    /* Contact Section */
+    #contact h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    #contact form {
+        max-width: 80%; /* Form takes less space */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem; /* Smaller footer text */
+    }
+}
+
+
+/* For screens 768px and below (Tablets and Small Laptops) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: -8px;
+        left: 43%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        background-color: transparent;
+        width: 90%;
+        gap: 10px; 
+    }
+
+    .profile-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        max-width: 90%; /* Full width for smaller screens */
+    }
+
+    #skills {
+        padding: 15px;
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    #skills .skills-container {
+        gap: 10px;
+    }
+
+    #skills .skill-label {
+        font-size: 12px;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    #skills .range {
+        height: 20px;
+    }
+
+    #skills .range:after {
+        font-size: 10px;
+    }
+    #contact h2 {
+        font-size: 1.6rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+    }
+
+    #contact form {
+        max-width: 90%; /* Adjust the form width */
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    #contact button {
+        font-size: 0.9rem; /* Adjust button size */
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: ;
+        width: 70%;
+        background-color: #fff; /* White background for better contrast */
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    }
+
+    .nav-links a {
+        font-size:5; /* Smaller font size */
+        padding: 8px 0;
+    }
+
+    #nav-icon1 {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Profile Section */
+    .profile-image {
+        width: 120px; /* Smaller profile image */
+        height: 120px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem; /* Adjust heading font size */
+    }
+
+    .text-content h2 {
+        font-size: 1rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+
+    /* About Section */
+    #about {
+        padding: 20px 10px; /* Reduce padding */
+        font-size: 1rem; /* Smaller text size */
+    }
+
+    #about h2 {
+        font-size: 1.5rem; /* Adjust heading font size */
+    }
+
+    #about p {
+        font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+
+    #about button {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 0.9rem;
+    }
+
+    /* Projects Section */
+    .project-container {
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center;
+    }
+
+    .project-box {
+        max-width: 90%; /* Reduce box width */
+        margin-bottom: 20px; /* Add spacing between projects */
+    }
+
+    #projects h1 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    /* Skills Section */
+    #skills {
+        padding: 15px 10px;
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    #skills .skills-container {
+        gap: 10px;
+    }
+
+    #skills .skill-label {
+        font-size: 0.8rem; /* Smaller skill labels */
+    }
+
+    #skills .range {
+        height: 20px;
+    }
+
+    #skills .range:after {
+        font-size: 0.8rem; /* Adjust percentage text */
+    }
+
+    /* Contact Section */
+    #contact {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    #contact h2 {
+        font-size: 1.4rem; /* Smaller heading size */
+    }
+
+    #contact p {
+        font-size: 0.9rem; /* Smaller paragraph font size */
+    }
+
+    #contact form {
+        max-width: 100%; /* Full width for form */
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 8px; /* Adjust input padding */
+        font-size: 0.9rem;
+    }
+
+    #contact button {
+        font-size: 0.9rem; /* Smaller button font size */
+        padding: 8px 16px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8rem; /* Smaller footer text */
+        padding: 15px 10px;
+    }
+
+    .footer-socials img {
+        width: 20px; /* Smaller social media icons */
+    }
+}
+
+
+/* For screens 480px and below (Mobile Devices) */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: -8px;
+        left: 42%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        background-color: transparent;
+        width: 90%;
+        gap: 10px; 
+    }
+    
+
+    .profile-image {
+        width:200px;
+        height: 200px;
+    }
+
+    .text-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        max-width: 100%; /* Full width for very small screens */
+    }
+
+    #skills {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #skills .skills-container {
+        gap: 5px; /* Minimized spacing */
+    }
+
+    #skills .skill-label {
+        font-size: 10px;
+    }
+
+    #skills .range {
+        height: 15px;
+    }
+
+    #skills .range:after {
+        font-size: 8px;
+    }
+    #contact {
+        padding: 20px 10px; /* Reduce overall padding */
+    }
+
+    #contact h2 {
+        font-size: 1.4rem;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+    }
+
+    #contact form {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 6px; /* Reduce padding for mobile */
+        font-size: 0.9rem;
+    }
+
+    #contact button {
+        font-size: 0.8rem;
+        padding: 6px 12px; /* Smaller button for mobile */
+    }
+}
